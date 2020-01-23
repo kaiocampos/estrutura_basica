@@ -1,0 +1,7 @@
+RewriteEngine On
+#exclui o acesso direto ao arquivo
+RewriteCond %{REQUEST_FILENAME} !-f
+#exclui o acesso direto ao diretorio
+RewriteCond %{REQUEST_FILENAME} !-d
+                    #pasta inicial do projeto    
+RewriteRule ^(.*)$ /estrutura_basica/index.php?url=$1 [QSA,L]

@@ -1,0 +1,10 @@
+{
+    "name": "kaio/estrutura_basica",
+    "authors": [
+        {
+            "name": "Kaio Campos",
+            "email": "kaiocamposti@gmail.com"
+        }
+    ],
+    "require": {}
+}
