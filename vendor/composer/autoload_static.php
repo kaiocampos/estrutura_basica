@@ -20,7 +20,7 @@ class ComposerStaticInit1097ff61638bb4217e4f03cf6f94053f
     public static $prefixDirsPsr4 = array (
         'Core\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/core',
+            0 => __DIR__ . '/../..' . '/app/core',
         ),
         'App\\' => 
         array (
@@ -29,7 +29,7 @@ class ComposerStaticInit1097ff61638bb4217e4f03cf6f94053f
     );
 
     public static $classMap = array (
-        'App\\core\\Core' => __DIR__ . '/../..' . '/app/core/Core.php',
+        'Core\\Core' => __DIR__ . '/../..' . '/app/core/Core.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
