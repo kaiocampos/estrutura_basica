@@ -1,12 +1,9 @@
 <?php 
-use Core\Core;
+session_start();
 
-
-
-require "../vendor/autoload.php";
+//require "../vendor/autoload.php";
 require "config.php";
 
-session_start();
 
 spl_autoload_register(function($class)
 {
