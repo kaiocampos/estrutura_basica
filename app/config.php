@@ -4,7 +4,7 @@ require 'enviroment.php';
 $config = array();
 
 if (ENVIROMENT == 'development') {
-    define("BASE_URL", "http://localhost/estrutura_basica/app");
+    define("BASE_URL", "http://localhost/estrutura_basica/app/");
     $config['dbname'] = 'estrutura_mvc';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
