@@ -1,10 +1,16 @@
 <?php
 // namespace Controller;
 // use Core\Core;
-class homeController extends Controller{
+class homeController extends Controller{    
 
     public function index(){
-        $data = array('amount' => 5);
+        $anuncios = new Anuncios();
+        $usuarios = new Usuarios();
+
+        $data = array(
+            'amount' => $anuncios->getQuantidade(),
+            'nome' => $usuarios->getNome()
+        );
 
        $this->loadTemplate('home', $data);
 
