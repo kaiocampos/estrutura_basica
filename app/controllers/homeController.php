@@ -1,8 +1,12 @@
 <?php
 // namespace Controller;
 // use Core\Core;
-class homeController{
+class homeController extends Controller{
+
     public function index(){
-        echo "Olá mundo";
+        $data = array('amount' => 5);
+
+       $this->loadTemplate('home', $data);
+
     }
 }
